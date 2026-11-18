@@ -40,12 +40,16 @@ ip.addr == 10.11.10.147 && (nbns || llmnr || mdns || dhcp)
 ip.src == 10.11.10.147 && kerberos.msg_type == 10
 ```
 
-## Evidence screenshots
-Place the screenshots below into the repository's `screenshots/` folder:
+## Evidence Screenshots
 
-![HTTP traffic and connection timeline](screenshots/01-http-traffic.png)
-![NBNS hostname registration](screenshots/02-nbns-hostname.png)
-![Kerberos account identification](screenshots/03-kerberos-account.png)
+### 1. Suspicious HTTP Communications
+![NetSupport HTTP Traffic](screenshots/01-http-traffic.png)
+
+### 2. Workstation Hostname Identification
+![NBNS Hostname Evidence](screenshots/02-nbns-hostname.png)
+
+### 3. Kerberos User Account Identification
+![Kerberos Authentication Evidence](screenshots/03-kerberos-account.png)
 
 ## Assessment and limitations
 The capture confirms NetSupport-related HTTP communications with a suspicious destination and recurring POST activity. In the context of the exercise, these observations support suspected RAT C2 traffic. **They do not independently prove** the initial infection vector, data exfiltration, or commands executed by an operator. NetSupport also has legitimate administrative uses.
