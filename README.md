@@ -35,8 +35,11 @@ Investigate an alert for suspected NetSupport RAT traffic, identify the affected
 ### Reproducible Wireshark filters
 ```text
 ip.addr == 93.152.209.36 && tcp.port == 443
+
 ip.dst == 93.152.209.36 && tcp.dstport == 443 && tcp.flags.syn == 1 && tcp.flags.ack == 0
+
 ip.addr == 10.11.10.147 && (nbns || llmnr || mdns || dhcp)
+
 ip.src == 10.11.10.147 && kerberos.msg_type == 10
 ```
 
