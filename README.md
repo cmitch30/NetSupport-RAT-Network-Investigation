@@ -54,6 +54,14 @@ ip.src == 10.11.10.147 && kerberos.msg_type == 10
 ### 3. Kerberos User Account Identification
 ![Kerberos Authentication Evidence](screenshots/03-kerberos-account.png)
 
+## Full Incident Investigation Report
+
+A detailed SOC investigation report documenting the analysis of suspected NetSupport RAT activity, including network evidence, indicators of compromise, incident timeline, technical findings, and recommended response actions.
+
+**[View the Full SOC Incident Report](reports/NetSupport_RAT_SOC_Incident_Report.docx)**
+
+The report is provided in Microsoft Word format and can be downloaded directly from GitHub.
+
 ## Assessment and limitations
 The capture confirms NetSupport-related HTTP communications with a suspicious destination and recurring POST activity. In the context of the exercise, these observations support suspected RAT C2 traffic. **They do not independently prove** the initial infection vector, data exfiltration, or commands executed by an operator. NetSupport also has legitimate administrative uses.
 
